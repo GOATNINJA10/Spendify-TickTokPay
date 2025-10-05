@@ -30,14 +30,14 @@ Future<void> main() async {
     // Initialize Supabase with regular client
     await Supabase.initialize(
       url: dotenv.dotenv.env['SUPABASE_URL'] ?? 'https://bqlghhkmuctiqwpytpgg.supabase.co',
-      anonKey: dotenv.dotenv.env['SUPABASE_ANON_KEY'] ?? 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJxbGdoaGttdWN0aXF3cHl0cGdnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDMwNzM1NDgsImV4cCI6MjA1ODY0OTU0OH0.QTN4P4QFXlkd9k7xQgqhK_VPJk65ZHDj5Yu3DPEpxJM',
+      anonKey: dotenv.dotenv.env['SUPABASE_ANON_KEY'] ?? '',
     );
     
     // Initialize clients
     supabaseClient = Supabase.instance.client;
     supabaseServiceClient = SupabaseClient(
       dotenv.dotenv.env['SUPABASE_URL'] ?? 'https://bqlghhkmuctiqwpytpgg.supabase.co',
-      dotenv.dotenv.env['SUPABASE_SERVICE_KEY'] ?? 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJxbGdoaGttdWN0aXF3cHl0cGdnIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0MzA3MzU0OCwiZXhwIjoyMDU4NjQ5NTQ4fQ.YhL9qd8amPoC3nHioToKsCWF49s1WXFi9tm3_ZcUuHQ',
+      dotenv.dotenv.env['SUPABASE_SERVICE_KEY'] ?? '',
     );
     
     // Initialize background service
