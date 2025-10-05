@@ -110,7 +110,6 @@ The app follows Clean Architecture principles with the following structure:
 ## Support
 For support and questions:
 - Create an issue on GitHub
-- Email: support@spendify.app
 - Documentation: [Wiki](https://github.com/GOATNINJA10/Spendify-TickTokPay/wiki)
 
 
